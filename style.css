@@ -20,7 +20,7 @@ div ul#upper_banner_list {
   position        : absolute;
   top             : 0vw;
   left            : 0vw;
-  width           : 50%;
+  width           : 70%;
   height          : 100%;
   margin          : 0;
   padding         : 0;
@@ -37,7 +37,7 @@ div ul li {
   padding     : 0 0 0 2%;
   align-items : center;
   font-family : verdana;
-  font-size   : 2vw;
+  font-size   : 3.1vw;
 }
 
 div ul li:hover {
