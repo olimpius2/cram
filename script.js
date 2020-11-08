@@ -10,7 +10,7 @@ function fuck_it_function(id){
     id.innerHTML = "I Love You";
     id.style.color = 'red';
   }
-  else if (id.innerHTML == "Changed"){
+  else if (id.innerHTML == "I Love You"){
     id.innerHTML = "Fuuu";
     id.style.color = "";
   }
