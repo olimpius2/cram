@@ -1,13 +1,13 @@
 function about_function(){
   text_node = document.createElement("p");
-  text_node.innerHTML = "some text";
+  text_node.innerHTML = "I Love zwazoyati Habibati";
   document.getElementById("after_body").appendChild(text_node);
 }
 
 function fuck_it_function(id){
   //alert(id.innerHTML);
   if (id.innerHTML == "Fuuu"){
-    id.innerHTML = "Changed";
+    id.innerHTML = "I Love You";
     id.style.color = 'red';
   }
   else if (id.innerHTML == "Changed"){
