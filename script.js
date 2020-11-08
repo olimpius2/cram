@@ -18,9 +18,6 @@ function fuck_it_function(id){
 
 var new_window_count = 0;
 function comprar_function(){
-  if (new_window_count != 0){
-    new_dindow.close()
-  }
   var new_window = window.open("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/bear-with-a-bird-on-his-head-pencil-lenaer.jpg", "", "width=400,height=240,resizable=no");
   new_window_count += 1;
   new_window.focus();
