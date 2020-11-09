@@ -24,7 +24,7 @@ function comprar_function(){
   }
 
 function clik(id){
-  id.innerHTML = "Activated!";
+  id.innerHTML = "Activated !";
 }
 
 //window.onunload = alert("bslama!");
