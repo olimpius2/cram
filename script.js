@@ -23,4 +23,8 @@ function comprar_function(){
   new_window.focus();
   }
 
+function clik(id){
+  id.innerHTML = "Active";
+}
+
 //window.onunload = alert("bslama!");

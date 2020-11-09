@@ -53,3 +53,25 @@ div#after_body {
   width    : 100%;
   height   : 50%;
 }
+
+div#smt {
+  display          : flex;
+  position         : absolute;
+  top              : 50%;
+  left             : 50%;
+  width            : 5%;
+  height           : 5%;
+  margin           : 0px;
+  padding          : 0px;
+  overflow         : hidden;
+  border-radius    : 20px;
+  background-color : red;
+  align-items      : center;
+  justify-content  : center;
+  transform-origin : left;
+  transition       : all 2s;
+}
+
+div#smt:hover{
+  cursor : pointer;
+}
