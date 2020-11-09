@@ -75,5 +75,5 @@ div#smt {
 
 div#smt:hover{
   cursor : pointer;
-  transform : rotate3d(0, 50, 80, 180deg);
+  transform : rotate3d(100, 360, 260, 180deg);
 }
