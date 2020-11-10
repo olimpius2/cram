@@ -27,4 +27,5 @@ function clik(id){
   id.innerHTML = "Activated !";
 }
 
+
 //window.onunload = alert("bslama!");
