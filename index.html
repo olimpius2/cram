@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Horizontal  Nav</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script src="script.js"></script>
-  <meta name="viewport"
-  content="width=device-width initial-scale=1.0" />
-</head>
+  <head>
+    <title>Instaview</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body id="body">
-  <div id="upper_banner">
-    <img id="upper_banner_image" src="media\forest.jpg" alt="forest image" />
-    <ul id="upper_banner_list">
-      <li onclick="about_function()">About</li>
-      <li onclick="comprar_function()">Comprar</li>
-      <li onclick="fuck_it_function(this)">Fuuu</li>
-      <li onclick="help_function()">Help</li>
-    </ul>
-  </div>
+  <body>
+    <div id="container">
+      <div id="header">Instaviewer</div>
 
-  <div id="smt" onclick="clik(this)">changed good</div>
-  <div id="after_body" onclick="this.innerHTML += this.innerHTML"></div>
-</body>
+      <div id="image_container"></div>
+      <div id="title">title here</div>
+      <div id="description">some text</div>
+
+      <div id="buttons_container">
+        <button class="button">Precedent</button>
+        <button class="button" onclick="show_content()">Favoris</button>
+        <button class="button">Suivant</button>
+      </div>
+    </div>
+  </body>
 </html>

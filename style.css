@@ -1,96 +1,75 @@
-div#upper_banner {
-  position : absolute;
-  top      : 0;
-  left     : 0;
-  width    : 100%;
-  height   : 10%;
+#container {
+  z-index        : 100;
+  display        : flex;
+  width          : 100%;
+  height         : 100%;
+  align-items    : center;
+  flex-direction : column;
 }
 
-div img#upper_banner_image {
-  position : absolute;
-  top      : 0;
-  left     : 0;
-  width    : 100%;
-  height   : 100%;
-  filter   : opacity(0.7) blur(4px);
-}
-
-div ul#upper_banner_list {
-  display         : flex;
-  position        : absolute;
-  top             : 0vw;
-  left            : 0vw;
-  width           : 50%;
-  height          : 100%;
-  margin          : 0;
-  padding         : 0;
-  color           : rgb(255, 255, 255);
-  filter          : opacity(1);
-  list-style-type : none;
-}
-
-div ul li {
-  display     : flex;
-  width       : 100%;
-  height      : 100%;
-  margin      : 0;
-  padding     : 0 0 0 2%;
-  align-items : center;
-  font-family : verdana;
-  font-size   : 2vw;
-}
-
-div ul li:hover {
-  color       : yellow;
-  font-weight : bold;
-  cursor      : pointer;
-}
-
-div#after_body {
-  position : absolute;
-  top      : 10%;
-  left     : 1%;
-  width    : 100%;
-  height   : 50%;
-}
-
-div#smt {
-  z-index          : 2;
+#header {
   display          : flex;
   position         : absolute;
-  top              : 47.5%;
-  left             : 40%;
-  width            : 20%;
+  top              : 2.5%;
+  width            : 50%;
   height           : 5%;
-  margin           : 0px;
-  padding          : 0px;
-  color            : white;
-  overflow         : hidden;
-  border           : 2px solid rgb(89, 128, 71) 4px;
-  border-radius    : 20px;
-  background-color : rgb(97, 96, 255);
+  background-color : red;
   align-items      : center;
-  font-family      : fantasy;
+  font-family      : "fangsong" "courier new";
+  font-size        : 3vh;
   justify-content  : center;
-  transition       : all 0.3s;
-  font-size : 2vw;
-  /* transform-origin : left; */
 }
 
-div#smt:hover {
-  color            : rgb(50, 50, 0);
-  background-color : rgb(150, 96, 255);
-  font-weight : bold;
-  text-decoration  : underline;
-  transform        : scale3d(1.1, 1.1, 1.1);
-  cursor           : pointer;
+#image_container {
+  position      : absolute;
+  top           : 10%;
+  width         : 60%;
+  min-width     : 500px;
+  height        : 45%;
+  border        : 2px solid black;
+  border-radius : 4%;
 }
 
-div#smt:active{
-  color            : rgb(50, 50, 0);
-  background-color : rgb(97, 96, 150);
-  font-weight : normal;
+#title {
+  display          : flex;
+  position         : absolute;
+  top              : 55%;
+  width            : 50%;
+  height           : 5%;
+  background-color : yellow;
   text-decoration  : underline;
-  transform        : scale3d(0.9, 0.9, 0.9);
-  cursor           : grabbing;
+  align-items      : center;
+  font-family      : "fangsong" "courier new";
+  font-size        : 3vh;
+  font-style       : italic;
+  justify-content  : center;
+}
+
+#description {
+  position      : absolute;
+  top           : 60%;
+  width         : 50%;
+  height        : 30%;
+  border        : 1px solid black;
+  border-radius : 4%;
+  font-size     : 2vh;
+}
+
+#buttons_container {
+  display          : flex;
+  position         : absolute;
+  top              : 92.5%;
+  width            : 40%;
+  height           : 5%;
+  background-color : purple;
+  align-items      : center;
+  justify-content  : center;
+}
+
+.button {
+  width       : 30%;
+  height      : 80%;
+  margin      : 3%;
+  font-family : meiryo;
+  font-size   : 2vh;
 }
