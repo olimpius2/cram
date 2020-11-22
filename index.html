@@ -1,50 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Electron tuto 2</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– >
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"-->
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-</head>
+<html>
 <body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="twelve column" style="margin-top: 30%">
-        <h2>Notification : </h2>
-        <button id="notification_button">Show Notificaiton</button>
-      </div>
-    </div>
-  </div>
+<h2>JavaScript can Change HTML</h2>
+<div id="container">
+    <button class="btn" onclick="add()">adding text</button>
+    <button class="btn" onclick="clr()">clear text</button>
+    <button class="btn" onclick="stl()">style</button>
+    <button id="clr_stl" class="btn">clear style</button>
+</div>
+<p id="p1" style="display: block;">Hello World!</p>
 
-  <!--Script call
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="index.js"></script>
+<script>
+    let p_c = document.getElementById("p1");
+    let btn = document.getElementsByClassName("btn");
+    
+    function add(){p_c.innerHTML += "ssup<br>";};
+    function clr(){p_c.innerHTML = "<div></div>";};
+    function stl(){
+        let myVar = setInterval(()=>{
+            let r = (Math.random() * 255);
+            let g = (Math.random() * 255);
+            let b = (Math.random() * 255);
+    
+            for(ele of btn){
+                ele.style.color= `rgb(${r},${g},${b})`;
+                ele.style.backgroundColor = `rgb(${(255-r)},${(255-g)},${(255-b)})`;
+            }
+        }, 100)
+        
+        document.getElementById("clr_stl").addEventListener(
+            "click", 
+            ()=>{clearInterval(myVar)}
+        );
+    };
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        
+</script>
+
+<p>The paragraph above was changed by a script.</p>
+
 </body>
 </html>
